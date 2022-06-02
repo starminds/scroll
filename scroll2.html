@@ -100,7 +100,7 @@
 
                 const conTop = conEl.getBoundingClientRect().top
                 
-                if(sct > 300){
+                if(conTop <= 0){
                     boxEl.classList.add('round')   
                 }else{
                     boxEl.classList.remove('round')
@@ -108,7 +108,7 @@
             }
 
             window.addEventListener('scroll',handleScrollHeader)
-            widow.addEventListener('scroll', handleScrollBox)
+            window.addEventListener('scroll', handleScrollBox)
 
         })()
     </script>
